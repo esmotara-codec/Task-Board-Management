@@ -1,8 +1,14 @@
-let isDisable =false;
+
 let assignedTasks = 6;
 let completedTasks = 23;
-document.getElementById("complete-btn").addEventListener("click", function(){
-    console.log("Hello i clicked");
+const completeButtons = document.querySelectorAll(".complete-btn");
+
+completeButtons.forEach( button =>{
+
+    let isDisable =false;
+
+     button.addEventListener("click", function(){
+    
   
     if(isDisable){
         event.preventDefault();
@@ -37,15 +43,25 @@ completedTasks++;
 
     const msgEntry=document.createElement("div");
     msgEntry.classList.add("Completion-entry");
+
     msgEntry.innerHTML= completetionMessage;
-    completeMsgEntry.style.backgroundColor="#cccccc";
-    completeMsgEntry.style.margin="10px";
+
+    msgEntry.style.backgroundColor="#cccccc";
+    msgEntry.style.margin="15px";
+    msgEntry.style.padding="7px";
+    msgEntry.style.borderRadius = "5px";
+    console.log("New box : ", )
+
+
 
     completeMsgEntry.appendChild(msgEntry);
 
-    console.log("Compleeteeeeobject");
+   
      
-
+    alert("Board Updated Successfully");
 
  
-})
+});
+});
+
+
