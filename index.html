@@ -46,7 +46,7 @@
            <div class="flex items-center gap-5  md:gap-10 md:mx-5">
             <div class=" flex items-center px-5 py-3 gap-2 md:gap-3 border border-none bg-slate-100 rounded-full">
                 <img src="./assets/checkbox.png" alt="" class="w-5 md:w-9 ">
-                <h1 class="md:text-4xl font-bold ">23</h1>
+                <h1 id="complete-task"class="md:text-4xl font-bold ">23</h1>
               
             </div>
             <div class="items-center border border-none p-3 bg-slate-100 rounded-full"><img src="./assets/theme-btn.png" alt=""></div>
@@ -65,7 +65,7 @@
                                 <img src="./assets/checkbox.png" alt="" class="w-full md:w-10">
                             </div>
                            <div><h4 class="font-medium ">Task Assigned</h4>
-                            <h1 class="font-bold text-xl md:text-3xl ">05</h1>
+                            <h1 id="task-reduce"class="font-bold text-xl md:text-3xl ">6</h1>
                         </div>
                         </div>
                        
@@ -101,7 +101,7 @@
                                 <h3>Deadline</h3>
                                 <h1 class="font-semibold">21 March 2025</h1>
                              </div>
-                              <button class="bg-btn-primary font-medium text-[16px] text-white p-3 rounded-md">Completed</button>
+                              <button id="complete-btn"class="bg-btn-primary complete-class font-medium text-[16px] text-white p-3 rounded-md">Completed</button>
              
                              </div>
                         </div>
@@ -193,16 +193,16 @@
              </section>
             
              <!-- Part 2 -->
-              <section class="bg-white items-center border border-none p-2 rounded-md h-screen ">
-                <div class="flex justify-center gap-2">
-                    <img src="./assets/activity.png" alt="">
-                    <h2 class="text-xl mt-5">Activity Log</h2>
+              <section class="bg-white items-center text-center border border-none p-2 rounded-md h-screen ">
+                <div class="flex justify-center gap-2 mt-5">
+                    <img src="./assets/activity.png" alt="" class="w-5 ">
+                    <h2 class="text-xl ">Activity Log</h2>
                 </div>
                 <button class="bg-btn-primary font-medium text-[16px] text-white p-3 rounded-md m-2">Clear History</button>
                 <div class="border-t-4 border-dashed"></div>
 
-                <div><p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p></div>
-                <div><p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p></div>
+                <div class="bg-slate-200 mt-5 m-5"><p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p></div>
+                <div class="bg-slate-200 mt-5 m-5"><p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p></div>
 
 
               </section>
@@ -212,7 +212,7 @@
     </main>
 
     
-    
+    <script src="./script/complete.js"></script>
 
 
 
