@@ -16,6 +16,11 @@ document.getElementById("complete-btn").addEventListener("click", function(){
   this.style.backgroundColor = '#cccccc';
   this.style.cursor = 'not-allowed';
 
+  const now = new Date;
+  const timeString = now.toLocaleTimeString();
+  
+
+
 //   update Task Manager
 assignedTasks--;
 completedTasks++;
@@ -23,5 +28,24 @@ completedTasks++;
  taskReduce.innerText= assignedTasks;
  const completedTask =document.getElementById("complete-task");
     completedTask.innerText=completedTasks;
+
+
+    // Completed Massege
+    const completetionMessage= `You have Complete The Task Add Dark Mode at ${timeString}`;
+
+    const  completeMsgEntry=document.getElementById("message");
+
+    const msgEntry=document.createElement("div");
+    msgEntry.classList.add("Completion-entry");
+    msgEntry.innerHTML= completetionMessage;
+    completeMsgEntry.style.backgroundColor="#cccccc";
+    completeMsgEntry.style.margin="10px";
+
+    completeMsgEntry.appendChild(msgEntry);
+
+    console.log("Compleeteeeeobject");
+     
+
+
  
 })
