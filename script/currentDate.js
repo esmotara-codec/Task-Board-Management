@@ -3,7 +3,7 @@ function displayCurrentDate(){
     console.log("Full date from JavaScript:", today.toLocaleString());
 
     //Current Day
-    const days =["Sat", "Sun" , "Mon" ,"Tue", "Wed", "Thu" ,"Fri"];
+    const days =[ "Sun" , "Mon" ,"Tue", "Wed", "Thu" ,"Fri" , "Sat"];
     const daysOfWeek = days[today.getDay()];
 
      //Current Day
